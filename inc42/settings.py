@@ -118,7 +118,7 @@ STATIC_URL = '/static/'
 
 STATIC_ROOT = BASE_DIR + '/static/'
 
-HOST_DOMAIN = "localhost:8000"
+HOST_DOMAIN = "https://inc42.herokuapp.com"
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media') + "/"
 
