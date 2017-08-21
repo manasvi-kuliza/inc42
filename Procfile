@@ -1,0 +1,1 @@
+web: gunicorn inc42.wsgi
