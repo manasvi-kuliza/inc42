@@ -1,7 +1,7 @@
 # INC42 Project #
 
 
-## URL: http://localhost:8000/company/ ##
+## URL: https://inc42.herokuapp.com/company/ ##
 ## Types: GET & POST
 
 ### Sample Request: ###
@@ -25,7 +25,7 @@ Sample JSON request:
 
 ### Seperate upload URL ###
 Type : POST
-curl -X POST -H "Content-Type: multipart/form-data" --form logo=@<image.jpg>, --form name=<companyname> --form "http://localhost:8000/upload-logo/"
+curl -X POST -H "Content-Type: multipart/form-data" --form logo=@<image.jpg>, --form name=<companyname> --form "https://inc42.herokuapp.com/upload-logo/"
 
 
 NOTE:

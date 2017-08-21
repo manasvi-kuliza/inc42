@@ -80,11 +80,11 @@ WSGI_APPLICATION = 'inc42.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'ddc76dna16kdvp',
-        'USER': 'fgurrpzpahuiqv',
-        'PASSWORD': '916bd6b3ca59aa0712cc543ad6091670f2004f2ebbc2b486530aed0d18e7fc1a',
-        'HOST': 'ec2-54-75-231-195.eu-west-1.compute.amazonaws.com',
-        'PORT': '5432'
+        'NAME': 'inc42',
+        'USER': 'inc42',
+        'PASSWORD': '123',
+        'HOST': 'localhost', # Empty for localhost through domain sockets or'127.0.0.1' for localhost through TCP.
+        'PORT': ''
     }
 }
 
@@ -116,9 +116,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = BASE_DIR + '/static/'
-
-HOST_DOMAIN = "https://inc42.herokuapp.com"
+HOST_DOMAIN = "localhost:8000"
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media') + "/"
 
