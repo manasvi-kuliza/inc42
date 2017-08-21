@@ -30,7 +30,7 @@ def create_company(params, request):
                                         founded_on=params['founded_on'], social_info=params.get('social_info', {}),
                                         profile_id=profile_id)
         create_funds(company, fundings)
-        return {"message": "Company created successfully with profile id: " + params['profile_id']}
+        return {"message": "Company created successfully with profile id: " + profile_id}
     except GenericException as e:
         raise GenericException(detail=e.detail)
     except Exception as e:
